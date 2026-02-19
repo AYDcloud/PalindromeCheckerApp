@@ -9,17 +9,13 @@ public class PalindromeCheckerApp {
         System.out.print("Enter a string: ");
         String text = scanner.nextLine();
 
-        int left = 0;
-        int right = text.length() - 1;
         boolean isPalindrome = true;
 
-        while (left < right) {
-            if (text.charAt(left) != text.charAt(right)) {
+        for (int i = 0; i < text.length() / 2; i++) {
+            if (text.charAt(i) != text.charAt(text.length() - 1 - i)) {
                 isPalindrome = false;
                 break;
             }
-            left++;
-            right--;
         }
 
         if (isPalindrome) {
