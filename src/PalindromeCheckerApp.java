@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-class PalindromeChecker {
+class PalindromeCheckerApp {
 
     public boolean checkPalindrome(String input) {
         String s = input.replaceAll("\\s+", "").toLowerCase();
