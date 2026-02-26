@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PalindromeCheckerApp {
+public class PalindromeCheckerApp{
 
     static class Node {
         char data;
